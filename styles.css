@@ -76,6 +76,7 @@ it does not increase in mobile device */
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 10px;
     overflow: hidden;
+    background-color: white;
 }
 
 /* Getting my content horizontally in the same line*/
@@ -104,7 +105,7 @@ h1 {
 
 .sub {
     color: var(--bright-yellow);
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
 }
 
 .first-p {
