@@ -1,0 +1,117 @@
+/* RESETTING THE STYLESHEET */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* COLOR VARIABLES */
+:root {
+    /* PRIMARY COLORS*/
+    --cyan: hsl(179, 62%, 43%);
+    --cyan-light: hsla(179, 62%, 43%, 80%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    /* NEUTRAL COLORS */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayisch-blue: hsl(218, 22%, 67%);
+}
+
+/* SETTING THE FONT-FAMILY FOR THE WHOLE PAGE */
+body {
+    font-family: 'Karla', sans-serif;
+    background: #ededed;
+}
+
+/* 
+SETTING SECTIONS
+1. section-one
+2. section-two
+*/
+
+/* 1 */
+.section-one {
+    background: var(--cyan);
+}
+/* 2 */
+.section-two {
+    background: var(--cyan-light);
+}
+
+/* RESETTING LIST */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+Centering my container to the middle of the screen
+horizontally & vertically .
+1. making my container to a flex-item &
+my body to flex-container.
+2. centering the flex-item horizontally.
+3. centering the flex-item vertically.
+4. setting a minimum height to be able to center it
+vertically.
+*/
+
+.flex {
+    display: flex;
+    /* 1 */
+    justify-content: center;
+    /* 2 */
+    align-items: center;
+    /* 3 */
+    min-height: 100vh;
+}
+
+/* Styling my container by setting a width & max-width so
+it does not increase in mobile device */
+.container {
+    width: 90%;
+    max-width: 18.75rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Getting my content horizontally in the same line*/
+.content {
+    padding: 1rem;
+}
+
+/* 
+Styling h1 & h2, to match the font-size with
+the giving example 
+1. font-size matching
+2. text color changing & margins
+*/
+
+/* #1 */
+h1,
+h2 {
+    font-size: 1.3rem;
+}
+
+/* #2 - styling the first main content */
+h1 {
+    color: var(--cyan);
+    margin: .2rem 0 1.2rem 0;
+}
+
+.sub {
+    color: var(--bright-yellow);
+    margin-bottom: 1.2rem;
+}
+
+.first-p {
+    color: var(--grayisch-blue);
+    margin-bottom: 1rem;
+}
+
+/* #2 styling the first section */
+h2 {
+    color: white;
+}
