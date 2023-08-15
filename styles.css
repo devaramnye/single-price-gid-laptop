@@ -22,6 +22,7 @@
 body {
     font-family: 'Karla', sans-serif;
     background: #ededed;
+    padding: 1rem 0;
 }
 
 /* 
@@ -71,7 +72,7 @@ vertically.
 it does not increase in mobile device */
 .container {
     width: 90%;
-    max-width: 18.75rem;
+    max-width: 20rem;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 10px;
     overflow: hidden;
@@ -79,7 +80,7 @@ it does not increase in mobile device */
 
 /* Getting my content horizontally in the same line*/
 .content {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 /* 
@@ -92,7 +93,7 @@ the giving example
 /* #1 */
 h1,
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 /* #2 - styling the first main content */
@@ -109,9 +110,83 @@ h1 {
 .first-p {
     color: var(--grayisch-blue);
     margin-bottom: 1rem;
+    line-height: 1.7rem;
 }
 
-/* #2 styling the first section */
+/* #2 styling the first section content */
 h2 {
+    /* styles the margin of the first
+    and second header section */
+    color: var(--light-gray);
+    margin: .2rem 0 1.2rem 0;
+}
+
+.accent {
+    font-weight: 700;
+    font-size: 1.5rem;
     color: white;
+}
+
+.flex3 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.dark {
+    color: #d6d6d6;
+}
+
+.second-p {
+    margin-bottom: 1.5rem;
+    color: var(--light-gray);
+}
+
+/* customizing the button of the first section */
+.btn {
+    background: var(--bright-yellow);
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 5px;
+    color: white;
+    padding: 0.7rem 0;
+    margin-bottom: 0.5rem;
+}
+
+/* making the hover effect */
+.btn:hover,
+.btn:focus {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* #3 styling the second section content */
+ul {
+    line-height: 1.3rem;
+    margin-bottom: 0.7rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 700px) {
+    .flex2 {
+        display: flex;
+    }
+    .section-one {
+        width: 50%;
+    }
+    .section-two {
+        width: 50%;
+    }
+    .container {
+        max-width: 38rem;
+    }
+    .content {
+        margin: 0 1rem
+    }
 }
